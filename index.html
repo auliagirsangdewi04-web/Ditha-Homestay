@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ditha Homestay</title>
+  <style>
+    /* Style dasar */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f4ef;
+      color: #333;
+    }
+
+    /* Header dengan background gambar */
+    header {
+      background: url('https://images.unsplash.com/photo-1560184897-67f4a4f73a1d') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    nav {
+      background-color: #6b4226;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffdd99;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: #6b4226;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ditha Homestay</h1>
+    <p>Kenyamanan Anda, Prioritas Kami</p>
+  </header>
+
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#rooms">Kamar</a>
+    <a href="#coffee">Ditha Coffee</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <section id="about">
+    <div class="card">
+      <h2>Tentang Kami</h2>
+      <p>Ditha Homestay menghadirkan penginapan nyaman dengan suasana tenang dan fasilitas modern. Lokasi strategis di Siborongborong, Tapanuli Utara, cocok untuk perjalanan bisnis maupun liburan keluarga.</p>
+    </div>
+  </section>
+
+  <section id="rooms">
+    <div class="card">
+      <h2>Kamar</h2>
+      <h3>Standard Room</h3>
+      <p>Kamar dengan 2 tempat tidur single, water heater, perlengkapan mandi, rak, dan free Wi-Fi. Cocok untuk solo traveler.</p>
+      <h3>Family Room</h3>
+      <p>Kamar luas untuk keluarga, dilengkapi fasilitas lengkap untuk kenyamanan bersama.</p>
+    </div>
+  </section>
+
+  <section id="coffee">
+    <div class="card">
+      <h2>Ditha Coffee & Eatery</h2>
+      <p>Terletak di lantai tiga homestay, Ditha Coffee & Eatery menghadirkan suasana hangat dengan pilihan kopi dan makanan lezat.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Kontak</h2>
+      <p><b>Resepsionis:</b> +62 852-7009-0714</p>
+      <p><b>Coffee Shop:</b> +62 822-7755-3841</p>
+      <p><b>Alamat:</b> Ditha Homestay, Siborongborong, Tapanuli Utara</p>
+      <p><a href="https://maps.google.com" target="_blank">📍 Lihat di Google Maps</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ditha Homestay | Designed with ❤</p>
+  </footer>
+
+</body>
+</html>
